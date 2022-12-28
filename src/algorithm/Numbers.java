@@ -24,7 +24,8 @@ public class Numbers {
 		ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
 		//Selection Sort
 		Sort algo = new Sort();
-		algo.selectionSort(num);
+		//algo.selectionSort(num);
+		algo.bubbleSort(num);
 		long selectionSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of "+ num.length + " numbers in Selection Sort take: " + selectionSortExecutionTime + " milli sec");
         connectToSqlDB.insertDataFromArrayToSqlTable(num, "selection_sort", "SortingNumbers");
@@ -33,7 +34,7 @@ public class Numbers {
 		int n = num.length;
 		randomize (num, n);
 		//Insertion Sort
-		algo.insertionSort(num);
+		//algo.insertionSort(num);
 		long insertionSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
 

@@ -1,5 +1,7 @@
 package math.problems;
 
+import java.sql.SQLOutput;
+
 public class Pattern {
 
 	public static void main(String[] args) {
@@ -8,7 +10,10 @@ public class Pattern {
 		 *
 		 *
 		 */
-		
+		for (int i=100; i>0; i--){
+			System.out.print(i+",");
+
+		}
 
 
 	}

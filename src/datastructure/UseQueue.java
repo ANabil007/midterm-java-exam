@@ -6,15 +6,6 @@ import java.util.Iterator;
 
 public class UseQueue {
 
-//	public static void main(String[] args) {
-//		/*
-//		 * Demonstrate how to use Queue that includes add,peek,remove,pool elements.
-//		 * Use For Each loop and while loop with Iterator to retrieve data.
-//		 *
-//		 */
-//
-//	}
-
 	public static void main(String[] args) {
 		/*
 		 * Demonstrate how to use Queue that includes add,peek,remove,pool elements.
@@ -24,9 +15,10 @@ public class UseQueue {
 		Deque<String> queue = new ArrayDeque<>();
 
 		// add elements to the queue
-		queue.add("Apple");
-		queue.add("Banana");
-		queue.add("Orange");
+		queue.add("New York");
+		queue.add("Pennsylvania");
+		queue.add("Connecticut");
+		queue.add("California");
 
 		// peek at the first element using the peek() method (no remove)
 		String first = queue.peek();

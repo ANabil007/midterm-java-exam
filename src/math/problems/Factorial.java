@@ -4,33 +4,23 @@ import java.util.Scanner;
 
 public class  Factorial {
 
-//    public static void main(String[] args) {
-//        /*
-//         * Factorial of 5! = 5 x 4 X 3 X 2 X 1 = 120.
-//         * Write a java program to find Factorial of a given number using Recursion as well as Iteration.
-//         *
-//         */
-//        {
-//
-//
-//        }
-//    }
-public static void main(String[] args) {
-    /*
-     * Factorial of 5! = 5 x 4 X 3 X 2 X 1 = 120.
-     * Write a java program to find Factorial of a given number using Recursion as well as Iteration.
-     *
-     */
-    int unFactorialNum;
-    Scanner scan = new Scanner(System.in);
-    System.out.println("Please enter the number you would like to find the Factorial number of");
-    unFactorialNum = scan.nextInt();
-    int factorial = findFactorialRecursive(unFactorialNum);
-    System.out.println("Factorial of " + unFactorialNum +  " (recursive): " + factorial);
 
-    // find the factorial of unFactorialNum using iteration
-    factorial = findFactorialIterative(unFactorialNum);
-    System.out.println("Factorial of " + unFactorialNum +  " (recursive): " + factorial);
+    public static void main(String[] args) {
+                    /*
+                     * Factorial of 5! = 5 x 4 X 3 X 2 X 1 = 120.
+                     * Write a java program to find Factorial of a given number using Recursion as well as Iteration.
+                     *
+                     */
+        int unFactorialNum;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Please enter a number: ");
+        unFactorialNum = scan.nextInt();
+        // Factorial using recursion
+        int factorial = findFactorialRecursive(unFactorialNum);
+        System.out.println("Factorial of " + unFactorialNum +  " (recursive): " + factorial);
+        // Factorial using iteration
+        factorial = findFactorialIterative(unFactorialNum);
+        System.out.println("Factorial of " + unFactorialNum +  " (recursive): " + factorial);
 }
 
     public static int findFactorialRecursive(int unFactorialNum ) {

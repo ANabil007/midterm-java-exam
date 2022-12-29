@@ -27,5 +27,5 @@ public class MakePyramid {
             System.out.println();
         }
 
-        }
+    }
   }

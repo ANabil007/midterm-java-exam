@@ -30,20 +30,29 @@ public class DetermineLargestWord {
          */
         String s ="Human brain is a biological learning machine";
 
-        HashMap<String, Integer> wordLengths = new HashMap<>();
-        for (String word : s.split("\\s+")) {
-            wordLengths.put(word, word.length());
+        HashMap<Integer, String> wordLengths = new HashMap<>();
+        for (String word : s.split(" ")) {
+            wordLengths.put(word.length(), word);
         }
         String longestWord = "";
-        for (Map.Entry<String, Integer> entry : wordLengths.entrySet()) {
-            if (entry.getValue() > longestWord.length()) {
-                longestWord = entry.getKey();
+        for (Map.Entry<Integer, String> entry : wordLengths.entrySet()) {
+            if (entry.getKey() > longestWord.length()) {
+                longestWord = entry.getValue();
             }
+
+
         }
         //ANSWER:
-        System.out.println(longestWord.indexOf(longestWord) +" "+ longestWord);
+        System.out.println(longestWord.length() +" "+ longestWord);
 
-    }
+
+
+
+
+
+        }
+
+
 
     public static Map<Integer, String> findTheLargestWord(String wordGiven){
         Map<Integer, String> map = new HashMap<Integer, String>();

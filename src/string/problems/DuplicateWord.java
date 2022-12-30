@@ -4,34 +4,25 @@ import java.util.HashMap;
 
 public class DuplicateWord {
 
-//    public static void main(String[] args) {
-//        /*
-//         * Write a java program to find the duplicate words and their number of occurrences in the string.
-//         * Also Find the average length of the words.
-//         */
-//
-//        String st = "Java is a programming Language. Java is also an Island of Indonesia. Java is widely used language";
-//
-//    }
-public static void main(String[] args) {
-    /*
-     * Write a java program to find the duplicate words and their number of occurrences in the string.
-     * Also Find the average length of the words.
-     */
+        public static void main(String[] args) {
+            /*
+             * Write a java program to find the duplicate words and their number of occurrences in the string.
+             * Also Find the average length of the words.
+             */
 
-    String string = "Java is a programming Language. Java is also an Island of Indonesia. Java is widely used language";
-    // Split the string into a list of words
-    String[] words = string.split(" ");
+            String st = "Java is a programming Language. Java is also an Island of Indonesia. Java is widely used language";
+              // Split the string into a list of words
+             String[] words = st.split(" ");
 
-    // Create a HashMap to store the count of each word
-    HashMap<String, Integer> wordCount = new HashMap<>();
+              // Create a HashMap to store the count of each word
+                 HashMap<String, Integer> wordCount = new HashMap<>();
 
-    // Iterate through the list of words
-    for (String word : words) {
-        // If the word is already in the HashMap, increment the count
-        if (wordCount.containsKey(word)) {
-            wordCount.put(word, wordCount.get(word) + 1);
-        }
+                  // Iterate through the list of words
+                     for (String word : words) {
+                     // If the word is already in the HashMap, increment the count
+                          if (wordCount.containsKey(word)) {
+                              wordCount.put(word, wordCount.get(word) + 1);
+                          }
         // Otherwise, add the word to the HashMap with a count of 1
         else {
             wordCount.put(word, 1);
@@ -46,7 +37,7 @@ public static void main(String[] args) {
     }
 
     // Split the string into a list of words
-    String[] s = string.split(" ");
+    String[] s = st.split(" ");
 
     // Initialize variables to keep track of the total length and word count
     int totalLength = 0;

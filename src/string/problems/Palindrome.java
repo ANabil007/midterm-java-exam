@@ -1,19 +1,17 @@
 package string.problems;
 
+import java.util.Scanner;
+
 public class Palindrome {
-//    public static void main(String[] args) {
-//        /*
-//          If a String is reversed and it remains unchanged, that is called Palindrome. For example, MOM,DAD,MADAM are
-//          Palindrome. So write java code to check if a given String is Palindrome or not.
-//         */
-//
-//    }
-public static void main(String[] args) {
-        /*
-          If a String is reversed and it remains unchanged, that is called Palindrome. For example, MOM,DAD,MADAM are
-          Palindrome. So write java code to check if a given String is Palindrome or not.
-         */
-    String string = " ";
+
+            public static void main(String[] args) {
+                /*
+                If a String is reversed and it remains unchanged, that is called Palindrome. For example, MOM,DAD,MADAM are
+                Palindrome. So write java code to check if a given String is Palindrome or not.
+                */
+                Scanner scan = new Scanner(System.in);
+                System.out.println("Please enter a word to check if it's a Palindrome: ");
+                String string = scan.next();
 
     // Check if the string is empty or has only one character
     if (string.length() < 2) {

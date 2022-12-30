@@ -2,17 +2,10 @@ package string.problems;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Permutation {
 
-//    public static void main(String[] args) {
-//
-//        /*
-//         * Permutation of String "ABC" is "ABC" "BAC" "BCA" "ACB" "CAB" "CBA".
-//         * Write Java program to compute all Permutation of a String
-//         *
-//         */
-//    }
 public static void main(String[] args) {
 
     /*
@@ -20,7 +13,10 @@ public static void main(String[] args) {
      * Write Java program to compute all Permutation of a String
      *
      */
-    String string = "abc";
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Please enter a word to see permutation of its letters: ");
+    String string = scan.next();
+    System.out.println("Permutations of "+ string + " are :");
 
     // Compute all permutations of the string
     List<String> permutations = permute(string);

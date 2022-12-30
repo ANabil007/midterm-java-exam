@@ -1,5 +1,8 @@
 package datastructure;
 
+import databases.ConnectToSqlDB;
+
+import java.sql.Statement;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -37,6 +40,14 @@ public class UseMap {
 			String value = entry.getValue();
 			System.out.println(key + ": " + value);
 		}
+
+		ConnectToSqlDB connect = new ConnectToSqlDB();
+
+
+
+
+
+
 	}
 
 }

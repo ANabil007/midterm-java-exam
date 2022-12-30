@@ -14,7 +14,10 @@ public class FortuneEmployee {
 	 *
 	 **/
 	public static void main(String[] args) {
-		
+		EmployeeInfo obj1 = new EmployeeInfo(1);
+		System.out.println(obj1.employeeId);
+
+
 
 
 	}

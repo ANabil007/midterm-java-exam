@@ -25,12 +25,13 @@ public class Anagram {
 
 
 
+
         // Function Call
         if (areAnagram(str1, str2))
             System.out.println("The two words are anagram of each other");
         else
             System.out.println("The two words are not anagram of each other");
-
+        String actual = word1;
 
 
     }

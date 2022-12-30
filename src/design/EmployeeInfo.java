@@ -21,6 +21,7 @@ public class EmployeeInfo implements Employee{
 	 * declare few static and final fields and some non-static fields
 	 */
 	int employeeId;
+	String employeeName;
 
 	static String companyName;
 	
@@ -42,7 +43,11 @@ public class EmployeeInfo implements Employee{
 
 		
 	}
-	
+
+	public EmployeeInfo() {
+
+	}
+
 	/*
 	 * This methods should calculate Employee bonus based on salary and performance.
 	 * Then it will return the total yearly bonus. So you need to implement the logic.
@@ -88,7 +93,7 @@ public class EmployeeInfo implements Employee{
 
 	@Override
 	public String employeeName() {
-		return null;
+		return employeeName;
 	}
 
 	@Override
@@ -156,22 +161,22 @@ public class EmployeeInfo implements Employee{
 					date = 6;
 					break;
 				case July:
-					date = 1;
+					date = 7;
 					break;
 				case August:
-					date = 1;
+					date = 8;
 					break;
 				case September:
-					date = 1;
+					date = 9;
 					break;
 				case October:
-					date = 1;
+					date = 10;
 					break;
 				case November:
-					date = 1;
+					date = 11;
 					break;
 				case December:
-					date = 1;
+					date = 12;
 					break;
 				default:
 					date = 0;

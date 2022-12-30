@@ -20,7 +20,7 @@ public class  Factorial {
         System.out.println("Factorial of " + unFactorialNum +  " (recursive): " + factorial);
         // Factorial using iteration
         factorial = findFactorialIterative(unFactorialNum);
-        System.out.println("Factorial of " + unFactorialNum +  " (recursive): " + factorial);
+        System.out.println("Factorial of " + unFactorialNum +  " (iteration): " + factorial);
 }
 
     public static int findFactorialRecursive(int unFactorialNum ) {

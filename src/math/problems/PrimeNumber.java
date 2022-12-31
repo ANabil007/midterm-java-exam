@@ -1,5 +1,8 @@
 package math.problems;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class PrimeNumber {
 
 	public static void main(String[] args) {
@@ -12,8 +15,8 @@ public class PrimeNumber {
 		 * Use any databases[MongoDB, Oracle, MySql] to store data and retrieve data.
 		 *
 		 */
-		int n = 1000;
-		printPrime(n);
+		int n = 1000000;
+		System.out.println(printPrime(n));
 
 	}
 
@@ -32,12 +35,14 @@ public class PrimeNumber {
 		}
 
 		// Function to print primes
-		static void printPrime(int n)
+		static ArrayList printPrime(int n)
 		{
+			ArrayList arrayList = new ArrayList<>();
 			for (int i = 2; i <= n; i++) {
 				if (isPrime(i))
-					System.out.println(i + " ");
+					arrayList.add(i);
 			}
+			return arrayList;
 		}
 
 

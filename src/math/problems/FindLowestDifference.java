@@ -22,7 +22,7 @@ public class FindLowestDifference {
                 (array1, array2, m, n));
 
     }
-        static int findSmallestDifference(int array1[], int array2[],
+      public static int findSmallestDifference(int array1[], int array2[],
         int m, int n)
         {
             // Sort both arrays

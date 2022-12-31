@@ -14,6 +14,8 @@ public class Fibonacci {
         System.out.println("The first " + n + " Fibonacci numbers are:");
         System.out.println(num1);
         System.out.println(num2);
+
+//       public int
         for (int i = 1; i<=n-2; ++i)
         {
             int sum = num1 + num2;

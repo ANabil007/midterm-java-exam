@@ -31,27 +31,8 @@ public class Sort {
         return list;
     }
 
-//    public int[] insertionSort(int [] array){
-//        final long startTime = System.currentTimeMillis();
-//        int [] list = array;
-//        //implement here
-//
-//
-//
-//        final long endTime = System.currentTimeMillis();
-//        final long executionTime = endTime - startTime;
-//        this.executionTime = executionTime;
-//        return list;
-//    }
 
-//    public int[] bubbleSort(int [] array){
-//        int [] list = array;
-//        //implement here
-//
-//
-//
-//        return list;
-//    }
+
 
     public int[] insertionSort(int[] array) {
         final long startTime = System.currentTimeMillis();

@@ -55,7 +55,7 @@ public class UseArrayList {
 		}
 
 		// connect to the database and store the sorted list
-		// (database connection code not shown)
+
 		storeInDatabase(luxuriousCars);
 	}
 

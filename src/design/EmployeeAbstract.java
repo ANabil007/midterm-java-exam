@@ -1,5 +1,5 @@
 package design;
 
-public abstract class EmployeeAbstract  {
+public abstract class EmployeeAbstract implements Employee  {
 
 }

@@ -14,11 +14,35 @@ public class FortuneEmployee {
 	 *
 	 **/
 	public static void main(String[] args) {
-		EmployeeInfo obj1 = new EmployeeInfo();
-		obj1.employeeId(2);
-		obj1.employeeName("jack");
-		System.out.println(obj1.employeeId);
-		System.out.println(obj1.employeeName());
+
+		//using parameterized constructor to assign Id and methods
+		EmployeeInfo emp1 = new EmployeeInfo(1);
+		emp1.employeeName("Jack");
+		emp1.assignDepartment(20);
+		System.out.println("Name: " + emp1.employeeName() +", Id :" + emp1.employeeId() + ", Dept: "+ emp1.getDepartment());
+		System.out.println("Salary: " + emp1.calculateSalary(40,40));
+
+
+		//using default constructor and methods
+		EmployeeInfo emp2 = new EmployeeInfo();
+		emp2.employeeId(2);
+		emp2.employeeName("John");
+		emp2.assignDepartment(30);
+		System.out.println("Name: " + emp2.employeeName() +", Id :" + emp2.employeeId() + ", Dept: "+ emp2.getDepartment());
+		System.out.println("Salary: " + emp2.calculateSalary(25,50));
+
+		//Using parameterized  constructor to assign both name and Id
+		EmployeeInfo emp3 = new EmployeeInfo("Mike",3);
+		emp3.assignDepartment(40);
+		System.out.println("Name: " + emp3.employeeName() +", Id :" + emp3.employeeId() + ", Dept: "+ emp3.getDepartment());
+		System.out.println("Salary: " + emp3.calculateSalary(35,65));
+
+
+
+
+
+
+
 
 
 

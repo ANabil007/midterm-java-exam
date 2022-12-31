@@ -1,6 +1,7 @@
 package math.problems;
 
 import java.sql.SQLOutput;
+import java.util.ArrayList;
 
 public class Pattern {
 
@@ -11,11 +12,19 @@ public class Pattern {
 		 *
 		 */
 
-		for (int i=100; i>0; i--){
-			System.out.print(i+",");
-
-		}
-
+		System.out.println(pattern());
 
 	}
+
+	public static ArrayList pattern () {
+		ArrayList arrayList = new ArrayList();
+
+		for (int i = 100; i > 0; i--) {
+			arrayList.add(i);
+
+		}
+		return arrayList;
+
+	}
+
 }

@@ -15,7 +15,7 @@ public interface Employee {
 	public String employeeName();
 	
 	//assignDepartment() will assign employee to departments
-    public void assignDepartment();
+    public int getDepartment();
 
 	int employeeId(int employeeId);
 
@@ -24,7 +24,7 @@ public interface Employee {
 	int assignDepartment(int Department);
 
 	//calculate employee salary
-	public int calculateSalary();
+	public int calculateSalary(int hours, int ratePerHour);
 	
 	//employee benefit
 	public void benefitLayout();

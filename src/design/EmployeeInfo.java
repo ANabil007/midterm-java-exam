@@ -20,6 +20,10 @@ public class EmployeeInfo implements Employee{
 	/*
 	 * declare few static and final fields and some non-static fields
 	 */
+	static int a;
+	static double b;
+	final int c= 5;
+	int department;
 	int employeeId;
 	String employeeName;
 
@@ -36,12 +40,12 @@ public class EmployeeInfo implements Employee{
 	 * Must implement below constructor.
 	 */
 	public EmployeeInfo(int employeeId){
+		this.employeeId = employeeId;
 
 	}
     public EmployeeInfo(String name, int employeeId){
-
-
-		
+		this.employeeName=name;
+		this.employeeId=employeeId;
 	}
 
 	public EmployeeInfo() {
@@ -97,7 +101,8 @@ public class EmployeeInfo implements Employee{
 	}
 
 	@Override
-	public void assignDepartment() {
+	public int getDepartment() {
+		return department;
 
 	}
 
@@ -109,17 +114,20 @@ public class EmployeeInfo implements Employee{
 
 	@Override
 	public String employeeName(String employeeName) {
-		return employeeName;
+		return this.employeeName= employeeName;
+
 	}
 
 	@Override
-	public int assignDepartment(int Department) {
-		return Department;
+	public int assignDepartment(int department)
+	{
+		return this.department= department;
 	}
 
 	@Override
-	public int calculateSalary() {
-		return 0;
+	public int calculateSalary(int hours, int ratePerHour)
+	{
+		return hours*ratePerHour;
 	}
 
 	@Override

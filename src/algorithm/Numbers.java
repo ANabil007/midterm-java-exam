@@ -22,22 +22,46 @@ public class Numbers {
 		int [] num = new int[100];
 		storeRandomNumbers(num);
 		ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
-		//Selection Sort
 		Sort algo = new Sort();
+
 		algo.selectionSort(num);
-		algo.bubbleSort(num);
-		algo.insertionSort(num);
-		long selectionSortExecutionTime = algo.executionTime;
+
+		double selectionSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of "+ num.length + " numbers in Selection Sort take: " + selectionSortExecutionTime + " milli sec");
         connectToSqlDB.insertDataFromArrayToSqlTable(num, "selection_sort", "SortingNumbers");
         List<String> numbers = connectToSqlDB.readDataBase("selection_sort", "SortingNumbers");
 		printValue(numbers);
 		int n = num.length;
 		randomize (num, n);
-		long insertionSortExecutionTime = algo.executionTime;
+
+		algo.insertionSort(num);
+
+		double insertionSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
+		connectToSqlDB.insertDataFromArrayToSqlTable(num, "insertion_sort", "SortingNumbers");
+		List<String> numbers1 = connectToSqlDB.readDataBase("insertion_sort", "SortingNumbers");
+		printValue(numbers1);
+		int n2 = num.length;
+		randomize (num, n2);
+
+		algo.bubbleSort(num);
+
+		double bubbleSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of " + num.length + " numbers in bubble Sort take: " + insertionSortExecutionTime + " milli sec");
+		connectToSqlDB.insertDataFromArrayToSqlTable(num, "bubble_sort", "SortingNumbers");
+		List<String> numbers2 = connectToSqlDB.readDataBase("bubble_sort", "SortingNumbers");
+		printValue(numbers2);
+
+
+
 
 		//By following above, Continue for rest of the Sorting Algorithm....
+
+
+
+
+
+
 
 		//Come to conclusion about which Sorting Algo is better in given data set.
 

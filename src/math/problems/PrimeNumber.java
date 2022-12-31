@@ -12,7 +12,7 @@ public class PrimeNumber {
 		 * Use any databases[MongoDB, Oracle, MySql] to store data and retrieve data.
 		 *
 		 */
-		int n = 1000000;
+		int n = 1000;
 		printPrime(n);
 
 	}
